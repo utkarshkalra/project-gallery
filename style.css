@@ -1,0 +1,44 @@
+:root{
+    --navcolor:white;
+    --navbg:rebeccapurple;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+.nav-bar{
+    height:10vh;
+    background-color:var(--navbg);
+    display: flex;
+}
+
+/* .nav-bar>div{
+    width:10%
+} */
+.nav-bar>ul{
+    width:90%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    height:100%;
+    align-items: center;
+}
+
+li{
+    width:25%;
+    text-align: center;
+    height: 100%;
+    padding-top:10px;
+}
+
+li>a{
+    /* display: block; */
+    /* padding:2rem; */
+    color:var(--navcolor);
+    text-decoration: none;
+    
+}
