@@ -2,7 +2,7 @@
   --navcolor: white;
   --whiteheading:white;
   --blackheading:black;
-  --navbg: rgba(0, 0, 0, 0.4);
+  --navbg: rgb(0, 0, 0);
 
   --boldhead: "Anton", sans-serif;
 
@@ -21,17 +21,18 @@ html, body {
 }
 h1 {
   font-family: var(--boldhead);
-  font-size: 7rem;
+  font-size: 6rem;
   line-height: 8rem;
 }
 p{
     font-family: var(--textfont);
+    font-size: 1.2rem;
 }
 
 .image {
   width: 100vw;
   height: 100vh;
-  background-image: url(img/webtopbg.png);
+  background-image: url(img/webdownbg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   
@@ -72,11 +73,16 @@ li > a {
   font-size: 1.2rem;
   line-height: 41px;
 }
+li >a:hover{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
 .heading h1{
+    font-size: 6rem;
     float: right;
     position: relative;
     right: 4rem;
-    top: 2.75rem;
+    top:27rem;
     color:var(--whiteheading);
 }
 .aboutmyself{
@@ -86,8 +92,18 @@ li > a {
     background-color:white;
     color:black;
 }
+.rect{
+    position: relative;
+    float: left;
+    height: 7rem;
+    width: 1.2rem;
+    background-color: #2b2b2b;
+    top: 2.7rem;
+    left: 4.5rem;
+}
 
 .aboutmyself>p{
+    display: inline-block;
     color: #3a3a3a;
     height: 7.5rem;
     width: 53.375rem;
@@ -97,24 +113,82 @@ li > a {
 
 }
 .aboutmyself>h1{
-    margin-bottom: 30px;
+    margin-bottom: 5rem;
+    color: #2b2b2b;
     width: 65.125rem;
     position: sticky;
     left: 4.25rem;
 }
 
 .projectarea{
+    padding:5rem 0;
     background:black;
     color:white;
+}
+.projectarea>h1{
+    left:4.25rem;
+    position:sticky;
+    width:64rem;
+    color: #cacaca;
+    padding-bottom: 2rem;
 }
 
 .projectarea > .projectwrap{
     display:flex;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: space-around;
+
 }
 
 .project{
-    width:49vw;
+    width:45vw;
+    height:60vh;
     padding:2rem;
+
+}
+
+.projectimage{
+    background-image:url(img/projectphoto.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%;
+    
+}
+.signout{
+    display: flex;
+}
+.text{
+    /* color:rgba(0, 0, 0);
+    background-color:white; */
+    color:white;
+    background-color:rgba(0, 0, 0,0.2);
+}
+.endimage{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/webtopbg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.endimage>.text{
+    padding:2rem;
+
+}
+
+.text>p{
+    position: relative;
+    float: right;
+    top: 11rem;
+    left: 31rem;
+    width: 38vw;
+}
+
+.text>h1{
+    position: relative;
+    float: right;
+    margin-top:2rem;
+
+
 }
