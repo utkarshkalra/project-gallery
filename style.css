@@ -1,6 +1,12 @@
 :root {
   --navcolor: white;
+  --whiteheading:white;
+  --blackheading:black;
   --navbg: rgba(0, 0, 0, 0.4);
+
+  --boldhead: "Anton", sans-serif;
+
+  --textfont: "Raleway", sans-serif;
 }
 
 * {
@@ -8,44 +14,53 @@
   box-sizing: border-box;
   padding: 0;
 }
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+h1 {
+  font-family: var(--boldhead);
+  font-size: 7rem;
+  line-height: 8rem;
+}
+p{
+    font-family: var(--textfont);
+}
 
-.image  {
-  position: absolute;
+.image {
   width: 100vw;
   height: 100vh;
-  left: 0px;
-  top: 0px;
   background-image: url(img/webtopbg.png);
-  background-size:100% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  
 }
 
 .nav-bar {
-    height: 45px;
-    background-color: var(--navbg);
-    display: flex;
-    border: 2px solid #bdbdbd;
-    box-sizing: border-box;
-    margin: 1.2rem 2rem 0 2rem;
+  height: 45px;
+  background-color: var(--navbg);
+  display: flex;
+  border-bottom: 2px solid #bdbdbd;
+  box-sizing: border-box;
 }
 
 /* .nav-bar>div{
     width:10%
 } */
 .nav-bar > ul {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    height: 100%;
-    align-items: center;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
 }
 
 li {
   width: 25%;
   text-align: center;
   height: 100%;
-  padding-top: 12px;
 }
 
 li > a {
@@ -53,4 +68,53 @@ li > a {
   /* padding:2rem; */
   color: var(--navcolor);
   text-decoration: none;
+  font-family: var(--textfont);
+  font-size: 1.2rem;
+  line-height: 41px;
+}
+.heading h1{
+    float: right;
+    position: relative;
+    right: 4rem;
+    top: 2.75rem;
+    color:var(--whiteheading);
+}
+.aboutmyself{
+    position: relative;
+    width:100%;
+    /* height:50vh; */
+    background-color:white;
+    color:black;
+}
+
+.aboutmyself>p{
+    color: #3a3a3a;
+    height: 7.5rem;
+    width: 53.375rem;
+    left: 7.25rem;
+    margin-top:3rem;
+    position: sticky;
+
+}
+.aboutmyself>h1{
+    margin-bottom: 30px;
+    width: 65.125rem;
+    position: sticky;
+    left: 4.25rem;
+}
+
+.projectarea{
+    background:black;
+    color:white;
+}
+
+.projectarea > .projectwrap{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.project{
+    width:49vw;
+    padding:2rem;
 }
