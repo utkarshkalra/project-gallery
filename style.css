@@ -30,15 +30,6 @@ p{
     font-size: 1.2rem;
 }
 
-.image {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(img/webdownbg.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  
-}
-
 .nav-bar {
   height: 45px;
   background-color: var(--navbg);
@@ -77,13 +68,6 @@ li > a {
 li >a:hover{
     font-size: 1.25rem;
     font-weight: bold;
-}
-.heading h1{
-    float: right;
-    position: relative;
-    right: 4rem;
-    top:27rem;
-    color:var(--whiteheading);
 }
 .aboutmyself{
     position: relative;
@@ -190,23 +174,10 @@ li >a:hover{
     li>a{
         font-size: 1.1rem;
     }
-    .image {
-        height:65vh;
-        background:black ;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
     h1{
         font-size: 4rem;
         line-height: 5rem;
 
-    }
-    .heading h1{
-        top:5rem;
-        /* right: 0rem; */
-        text-align: center;
-        font-size: 4rem;
-        line-height: 5rem;
     }
     .rect{
       display: none;
