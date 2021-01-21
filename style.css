@@ -15,7 +15,7 @@
   padding: 0;
 }
 html, body {
-    height: auto;
+   height:100%;
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -187,7 +187,9 @@ li >a:hover{
 }
 
 @media (max-width:400px){
-
+    li>a{
+        font-size: 1.1rem;
+    }
     .image {
         height:65vh;
         background:black ;
