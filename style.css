@@ -15,6 +15,7 @@
   padding: 0;
 }
 html, body {
+    height: auto;
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -74,11 +75,10 @@ li > a {
   line-height: 41px;
 }
 li >a:hover{
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 .heading h1{
-    font-size: 6rem;
     float: right;
     position: relative;
     right: 4rem;
@@ -165,30 +165,82 @@ li >a:hover{
     color:white;
     background-color:rgba(0, 0, 0,0.2);
 }
-.endimage{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(img/webtopbg.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.endimage>.text{
-    padding:2rem;
 
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-color: white;
+    color:black;
+    display: flex;
 }
 
 .text>p{
-    position: relative;
-    float: right;
-    top: 11rem;
-    left: 31rem;
-    width: 38vw;
+    padding:0 2vw 6vw 2vw;
+    max-width: 75vw;
 }
 
 .text>h1{
-    position: relative;
-    float: right;
+    padding:2vw;
     margin-top:2rem;
+}
 
+@media (max-width:400px){
 
+    .image {
+        height:65vh;
+        background:black ;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    h1{
+        font-size: 4rem;
+        line-height: 5rem;
+
+    }
+    .heading h1{
+        top:5rem;
+        /* right: 0rem; */
+        text-align: center;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .rect{
+      display: none;
+    }
+    .aboutmyself>p{
+        height: auto;
+        width: auto;
+        left: 0;
+        margin:0.8rem 1.2rem;
+    }
+    .aboutmyself>h1{
+        line-height: 4rem;
+        margin:1rem .5rem;
+        width: auto;
+        position: static;
+        left: 4.25rem;
+    }
+    .projectarea {
+        padding: 2rem 0;
+    }
+    .projectarea > h1 {
+        position: static;
+        width: auto;
+        padding:0 0 0 0.5rem;
+    }
+    .projectarea > .projectwrap {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+    .project {
+        width: auto;
+        height: 53vh;
+        padding: 2rem;
+    }
+    
 }
