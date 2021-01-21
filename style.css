@@ -29,7 +29,10 @@ p{
     font-family: var(--textfont);
     font-size: 1.2rem;
 }
-
+img{
+    width:100%;
+    background-color:black;
+}
 .nav-bar {
   height: 45px;
   background-color: var(--navbg);
@@ -97,24 +100,25 @@ li >a:hover{
 
 }
 .aboutmyself>h1{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     color: #2b2b2b;
     width: 65.125rem;
     position: sticky;
-    left: 4.25rem;
+    margin-left: 4.25rem;
 }
 
 .projectarea{
-    padding:5rem 0;
+    padding:3rem 1rem 5rem 1rem;
     background:black;
     color:white;
 }
 .projectarea>h1{
-    left:4.25rem;
+    margin-left:3.25rem;
     position:sticky;
     width:64rem;
     color: #cacaca;
     padding-bottom: 2rem;
+   
 }
 
 .projectarea > .projectwrap{
@@ -122,24 +126,15 @@ li >a:hover{
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
-
 }
 
 .project{
     width:45vw;
-    height:60vh;
-    padding:2rem;
+    padding-bottom: 1.5rem;
+    /* padding:1rem 0rem 2rem 1rem; */
 
 }
 
-.projectimage{
-    background-image:url(img/projectphoto.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height:100%;
-    width:100%;
-    
-}
 .signout{
     display: flex;
 }
@@ -169,8 +164,11 @@ li >a:hover{
     padding:2vw;
     margin-top:2rem;
 }
-
-@media (max-width:500px){
+/* --------------MEDIA QUERY----------------- */
+@media only screen and (max-width:728px){
+    html,body{
+        font-size:13px;
+    }
     li>a{
         font-size: 1.1rem;
     }
@@ -196,24 +194,67 @@ li >a:hover{
         left: 4.25rem;
     }
     .projectarea {
-        padding: 2rem 0;
+        padding: 2rem 1.5rem;
     }
     .projectarea > h1 {
         position: static;
         width: auto;
-        padding:0 0 0 0.5rem;
+        padding:0 0 1.5rem 0.5rem;
     }
     .projectarea > .projectwrap {
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
-        text-align: center;
+        text-align: center; */
         flex-direction: column;
-        /* justify-content: space-around; */
+        align-items: center;
     }
     .project {
-        width: auto;
-        height: 53vh;
-        padding: 2rem;
+        width: 80%;
     }
     
+}
+/* --------------MEDIA QUERY----------------- */
+
+@media only screen and (min-width:729px) and (max-width:954px){
+    html,body{
+        font-size:14px;
+    }
+    li>a{
+        font-size: 1.1rem;
+    }
+    h1{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .rect{
+      display: none;
+    }
+    .aboutmyself>p{
+        height: auto;
+        width: 80%;
+        left: 0;
+        margin:0.8rem 1.7rem;
+    }
+    .aboutmyself>h1{
+        line-height: 4rem;
+        margin:1rem 0 2rem 1.5rem;
+        width: auto;
+        position: static;
+        left: 4.25rem;
+        margin-left:2rem;
+    }
+    .projectarea {
+        padding: 2rem 1.5rem;
+    }
+    .projectarea > h1 {
+        margin:1rem 0 2rem 1.5rem;
+        position: static;
+        width: auto;
+        padding:0 0 1.5rem 0.5rem;
+    }
+    .project{
+        width:43%;
+    }
+
+
 }
