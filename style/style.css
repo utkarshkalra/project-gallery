@@ -1,7 +1,7 @@
 :root {
   --navcolor: white;
-  --whiteheading:white;
-  --blackheading:black;
+  --whiteheading: white;
+  --blackheading: black;
   --navbg: rgb(0, 0, 0);
 
   --boldhead: "Anton", sans-serif;
@@ -14,31 +14,51 @@
   box-sizing: border-box;
   padding: 0;
 }
-html, body {
-   height:100%;
-    margin: 0%;
-    box-sizing: border-box;
-    overflow-x: hidden;
+html,
+body {
+  height: 100%;
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 h1 {
   font-family: var(--boldhead);
   font-size: 6rem;
   line-height: 8rem;
 }
-p{
-    font-family: var(--textfont);
-    font-size: 1.2rem;
+p {
+  font-family: var(--textfont);
+  font-size: 1.2rem;
 }
-img{
-    width:100%;
-    background-color:black;
+span {
+  border: 2px solid white;
+  margin: 1.2vh 1vh 0 0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+a {
+  color: var(--navcolor);
+  font-size: 1.3rem;
+  line-height: 41px;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  width: 100%;
+  background-color: black;
 }
 .nav-bar {
   height: 45px;
-  background-color: var(--navbg);
+  background: var(--navbg);
   display: flex;
+  width: 100%;
   border-bottom: 2px solid #bdbdbd;
   box-sizing: border-box;
+  position: fixed;
+  z-index:1;
 }
 
 /* .nav-bar>div{
@@ -68,205 +88,212 @@ li > a {
   font-size: 1.2rem;
   line-height: 41px;
 }
-li >a:hover{
-    font-size: 1.25rem;
-    font-weight: bold;
+li > a:hover {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
-.aboutmyself{
-    position: relative;
-    width:100%;
-    /* height:50vh; */
-    background-color:white;
-    color:black;
+.aboutmyself {
+  width: 100%;
+  /* height:50vh; */
+  background-color: white;
+  color: black;
 }
-.rect{
-    position: relative;
-    float: left;
-    height: 7rem;
-    width: 1.2rem;
-    background-color: #2b2b2b;
-    top: 2.7rem;
-    left: 4.5rem;
-}
-
-.aboutmyself>p{
-    display: inline-block;
-    color: #3a3a3a;
-    height: 7.5rem;
-    width: 53.375rem;
-    left: 7.25rem;
-    margin-top:3rem;
-    position: sticky;
-
-}
-.aboutmyself>h1{
-    margin-bottom: 3rem;
-    color: #2b2b2b;
-    width: 65.125rem;
-    position: sticky;
-    margin-left: 4.25rem;
+.rect {
+  position: relative;
+  float: left;
+  height: 7rem;
+  width: 1.2rem;
+  background-color: #2b2b2b;
+  top: 2.7rem;
+  left: 4.5rem;
 }
 
-.projectarea{
-    padding:3rem 1rem 5rem 1rem;
-    background:black;
-    color:white;
+.aboutmyself > p {
+  display: inline-block;
+  color: #3a3a3a;
+  height: 7.5rem;
+  width: 53.375rem;
+  left: 7.25rem;
+  margin-top: 3rem;
+  position: sticky;
 }
-.projectarea>h1{
-    margin-left:3.25rem;
-    position:sticky;
-    width:64rem;
-    color: #cacaca;
-    padding-bottom: 2rem;
-   
-}
-
-.projectarea > .projectwrap{
-    display:flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-around;
+.aboutmyself > h1 {
+  margin-bottom: 3rem;
+  color: #2b2b2b;
+  width: 65.125rem;
+  position: sticky;
+  margin-left: 4.25rem;
 }
 
-.project{
-    width:45vw;
-    padding-bottom: 1.5rem;
-    /* padding:1rem 0rem 2rem 1rem; */
+.projectarea {
+  padding: 3rem 1rem 5rem 1rem;
+  background: black;
+  color: white;
 }
-.image{
-    width:100%;
-    overflow: hidden;
-}
-.project>.image>img{
-transition: all 1s ease;
-}
-.project>.image>img:hover{
-    transform: scale(1.3);
-   
+.projectarea > h1 {
+  margin-left: 3.25rem;
+  position: sticky;
+  width: 64rem;
+  color: #cacaca;
+  padding-bottom: 2rem;
 }
 
-.signout{
-    display: flex;
+.projectarea > .projectwrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.text{
-    /* color:rgba(0, 0, 0);
+
+.project {
+  width: 45vw;
+  /* padding-bottom: 1.5rem; */
+  padding: 1rem 0rem 0rem 1rem;
+}
+.image {
+  width: 100%;
+  overflow: hidden;
+  height: 40%;
+}
+.project > .image > img {
+  transition: all 1s ease;
+}
+.project > .image > img:hover {
+  transform: scale(1.3);
+}
+
+.project > .details {
+  margin-top: 2vh;
+  color: rgb(184, 184, 184);
+}
+
+.project > .tech {
+  color: rgb(184, 184, 184);
+}
+
+.signout {
+  display: flex;
+}
+.text {
+  /* color:rgba(0, 0, 0);
     background-color:white; */
-    color:white;
-    background-color:rgba(0, 0, 0,0.2);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.text{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    background-repeat: no-repeat;
-    background-color: white;
-    color:black;
-    display: flex;
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+  display: flex;
 }
 
-.text>p{
-    padding:0 2vw 6vw 2vw;
-    max-width: 75vw;
+.text > p {
+  padding: 0 2vw 6vw 2vw;
+  max-width: 75vw;
 }
 
-.text>h1{
-    padding:2vw;
-    margin-top:2rem;
+.text > h1 {
+  padding: 2vw;
+  margin-top: 2rem;
 }
 
 /* --------------MEDIA QUERY----------------- */
-@media only screen and (max-width:728px){
-    html,body{
-        font-size:13px;
-    }
-    li>a{
-        font-size: 1.1rem;
-    }
-    h1{
-        font-size: 3rem;
-        line-height: 5rem;
-
-    }
-    .rect{
-      display: none;
-    }
-    .aboutmyself>p{
-        height: auto;
-        width: auto;
-        left: 0;
-        margin:0.8rem 1.2rem;
-    }
-    .aboutmyself>h1{
-        line-height: 4rem;
-        margin:1rem 1.5rem;
-        width: auto;
-        position: static;
-        left: 4.25rem;
-    }
-    .projectarea {
-        padding: 2rem 1.5rem;
-    }
-    .projectarea > h1 {
-        font-size:3rem;
-        position: static;
-        width: auto;
-        margin:0;
-    }
-    .projectarea > .projectwrap {
-        /* display: flex;
+@media only screen and (max-width: 728px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+  li > a {
+    font-size: 1.1rem;
+  }
+  .nav-bar{
+      border-top: 2px solid white;
+      bottom:0;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  .rect {
+    display: none;
+  }
+  .aboutmyself > p {
+    height: auto;
+    width: auto;
+    left: 0;
+    margin: 0.8rem 1.2rem;
+  }
+  .aboutmyself > h1 {
+    line-height: 4rem;
+    margin: 1rem 1.5rem;
+    width: auto;
+    position: static;
+    left: 4.25rem;
+  }
+  .projectarea {
+    padding: 2rem 1.5rem;
+  }
+  .projectarea > h1 {
+    font-size: 3rem;
+    position: static;
+    width: auto;
+    margin: 0;
+  }
+  .projectarea > .projectwrap {
+    /* display: flex;
         flex-wrap: wrap;
         text-align: center; */
-        flex-direction: column;
-        align-items: center;
-    }
-    .project {
-        width: 80%;
-    }
-    
+    flex-direction: column;
+    align-items: center;
+  }
+  .project {
+    width: 80%;
+  }
 }
 /* --------------MEDIA QUERY----------------- */
 
-@media only screen and (min-width:729px) and (max-width:954px){
-    html,body{
-        font-size:14px;
-    }
-    li>a{
-        font-size: 1.1rem;
-    }
-    h1{
-        font-size: 4rem;
-        line-height: 5rem;
-    }
-    .rect{
-      display: none;
-    }
-    .aboutmyself>p{
-        height: auto;
-        width: 80%;
-        left: 0;
-        margin:0.8rem 1.7rem;
-    }
-    .aboutmyself>h1{
-        line-height: 4rem;
-        margin:1rem 0 2rem 1.5rem;
-        width: auto;
-        position: static;
-        left: 4.25rem;
-        margin-left:2rem;
-    }
-    .projectarea {
-        padding: 2rem 1.5rem;
-    }
-    .projectarea > h1 {
-        margin:1rem 0 2rem 1.5rem;
-        position: static;
-        width: auto;
-        padding:0 0 1.5rem 0.5rem;
-    }
-    .project{
-        width:43%;
-    }
-
-
+@media only screen and (min-width: 729px) and (max-width: 954px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  li > a {
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .rect {
+    display: none;
+  }
+  .aboutmyself > p {
+    height: auto;
+    width: 80%;
+    left: 0;
+    margin: 0.8rem 1.7rem;
+  }
+  .aboutmyself > h1 {
+    line-height: 4rem;
+    margin: 1rem 0 2rem 1.5rem;
+    width: auto;
+    position: static;
+    left: 4.25rem;
+    margin-left: 2rem;
+  }
+  .projectarea {
+    padding: 2rem 1.5rem;
+  }
+  .projectarea > h1 {
+    margin: 1rem 0 2rem 1.5rem;
+    position: static;
+    width: auto;
+    padding: 0 0 1.5rem 0.5rem;
+  }
+  .project {
+    width: 43%;
+  }
 }
