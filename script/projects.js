@@ -14,7 +14,7 @@ export default [
       "Javascript",
       "Heroku",
     ],
-    desc:"something about app"
+    desc:"A scalable Full Stack Web App which performs all CRUD operations stores data in a database via API call to the server"
   },
 
   {
@@ -31,7 +31,7 @@ export default [
       "Javascript",
       "Heroku",
     ],
-    desc:"something about app"
+    desc:"A Website to help new Anime viewers in finding good quality Animes and where to Watch them"
   },
 
   {
@@ -41,7 +41,7 @@ export default [
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
     techStack: ["RestAPI", "HTML5", "CSS3", "Javascript"],
-    desc:"something about app"
+    desc:"A Web app connecting TWO APIs to Produce desire Results"
   },
 
   {
@@ -51,7 +51,7 @@ export default [
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
     techStack: ["RestAPI", "HTML5", "CSS3", "Javascript"],
-    desc:"something about app"
+    desc:"Get a Quote for the Day and apply it to your daily Life to improve"
   },
   {
     id: 5,
@@ -60,6 +60,6 @@ export default [
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
     techStack: ["HTML5", "CSS3", "Javascript"],
-    desc:"something about app"
+    desc:"As the name suggest a basic DrumKit created Using basic Javascript so go ahead and play some beats"
   },
 ];
