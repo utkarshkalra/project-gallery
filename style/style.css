@@ -283,6 +283,9 @@ padding-top:0;
   .project {
     width: 80%;
   }
+  .text{
+    padding-bottom: 45px;
+  }
 }
 /* --------------MEDIA QUERY----------------- */
 
