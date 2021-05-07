@@ -249,7 +249,7 @@ margin: 0 .5rem 1rem .5rem;
     display: none;
   }
 .aboutmyself{
-margin-top:0;
+padding-top:0;
 }
   .aboutmyself > p {
     height: auto;
