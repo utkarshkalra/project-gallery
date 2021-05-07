@@ -87,25 +87,31 @@ img {
   align-items: center;
 }
 
-li {
+li { 
+  color: var(--navcolor);
   width: 25%;
   text-align: center;
   height: 100%;
 }
 
 li > a {
-  color: var(--navcolor);
+ 
   text-decoration: none;
   font-family: var(--textfont);
   font-size: 1.2rem;
   line-height: 41px;
+  display: inline-block;
+  width:100%;
 }
 
-li > a:hover,
-.active {
+li > a:hover{
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
+  
+}
+.active{
+background-color: rgb(94, 94, 94);
 }
 .aboutmyself {
   padding-top: 45px;
