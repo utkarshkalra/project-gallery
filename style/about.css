@@ -25,6 +25,10 @@ body {
   overflow-x: hidden;
   border: none;
 }
+i {
+  color: var(--color1);
+  display: none !important;
+}
 h1 {
   font-family: var(--defaultfont);
   font-size: 3rem;
@@ -105,6 +109,12 @@ img {
   font-weight: 700;
   font-size: 21px;
 }
+
+#activei {
+  color: var(--accentcolor);
+  font-weight: 700;
+  /* font-size: 21px; */
+}
 .nav-bar > ul > li > a:hover {
   font-weight: 700;
   font-size: 21px;
@@ -125,21 +135,35 @@ img {
   .nav-bar {
     bottom: 0;
     padding: 0;
+    height: 15.5vmin;
   }
   .nav-bar > ul {
     width: 100%;
+    height: 100%;
     padding: 0 0.5rem;
     margin: 0;
     justify-content: center;
   }
+
   .nav-bar > ul > li > a {
+    height: 100%;
+    justify-content: flex-end;
+    padding-bottom: .5rem;
     text-align: center;
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
     /* border: 1px solid white; */
+  }
+  .nav-bar > ul > li > a > i {
+    display: unset !important;
+    font-size: 20px;
+    margin-bottom: 0.3rem;
   }
   .nav-bar > ul > li > a:hover {
     font-size: 16px;
   }
+
 
   #active {
     font-size: 16px;
@@ -156,6 +180,8 @@ img {
   .spacer {
     display: none;
   }
-  
+
+
 }
 /* --------------MEDIA QUERY----------------- */
+

@@ -5,70 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/contact.css" />
+     <link rel="stylesheet" href="../style/all.min.css">
+    <link rel="stylesheet" href="../style/fontawesome.min.
     <!--adding fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
     <div class="wrapper">
       <nav class="nav-bar">
+        <div class="logo">
+          <h1>Utkarsh</h1>
+        </div>
         <ul>
-          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../"><i class="fas fa-home"></i>HOME</a></li>
           <li>
-            <a href="https://medium.com/@utkarshkalra" target="_blank">BLOG</a>
+            <a href="https://medium.com/@utkarshkalra" target="_blank"><i class="fas fa-pen"></i>BLOG</a>
           </li>
-          <li><a href="./about.html">ABOUT</a></li>
-          <li><a href="" id="active">CONTACT</a></li>
+          <li><a href="./about.html"><i class="fas fa-info-circle"></i>ABOUT</a></li>
+          <li><a href="" id="active"><i id="activei" class="fas fa-id-badge"></i>CONTACT</a></li>
         </ul>
       </nav>
+
+      <div class="spacer">&nbsp;</div>
+      <h3>contact</h3>
     </div>
-
-    <div class="container">
-      <h2>Send Me A Message</h2>
-      <div class="contact">
-        <div class="information">
-          <h2>email.</h2>
-          <h2>Github.</h2>
-          <h2>linkedin.</h2>
-          <h2>Instagram.</h2>
-        </div>
-        <form action="">
-          <div>
-            <label for="fname">Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name..."
-            />
-          </div>
-          <div>
-            <label for="lname">Email</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your Email..."
-            />
-          </div>
-
-          <label for="desc">Subject</label>
-          <textarea
-            id="desc"
-            name="subject"
-            placeholder="Write something.."
-          ></textarea>
-
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    </div>
+    
   </body>
-  <script src="../script/contact.js"></script>
 </html>
