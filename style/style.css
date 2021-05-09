@@ -1,7 +1,4 @@
 :root {
-  --boldhead: "Anton", sans-serif;
-  --textfont: "Raleway", sans-serif;
-
   --color1: white;
   --color1light: rgb(220, 220, 220);
   --color2: black;
@@ -24,6 +21,8 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   border: none;
+  background-color: var(--color2);
+  
 }
 i {
   color: var(--color1);
@@ -32,16 +31,18 @@ i {
 h1 {
   font-family: var(--defaultfont);
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h2 {
   padding: 0.8rem 0;
   font-family: var(--defaultfont);
+  font-weight: 400;
 }
 
 h3 {
   font-family: var(--defaultfont);
+  font-weight: 400;
 }
 
 p {
@@ -153,13 +154,10 @@ img {
   width: 70%;
 }
 
-.intro {
-  font-size: 2.5rem;
-}
 .name {
   border: none;
   font-family: var(--defaultfont);
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: var(--accentcolor);
   margin: unset;
   padding: unset;
@@ -217,7 +215,11 @@ img {
 .details > a:hover {
   color: var(--accentcolor);
 }
-
+i#show{
+  display: inline!important;
+  color:var(--accentcolor);
+  font-size:1.5rem!important;
+}
 .project > .tech {
   flex: 0 0 50px;
   margin-top: auto;
@@ -235,24 +237,40 @@ img {
   background-color: var(--color2);
 }
 
-.text {
+footer#contact {
+  height: 80vh;
+  color: var(--color1);
   display: flex;
   flex-direction: column;
-  text-align: left;
-  background-repeat: no-repeat;
-  background-color: var(--color1);
-  color: var(--color2);
+  
+}
+footer > .contactmail {
+  height: 60%;
   display: flex;
+  align-items: center;
+  margin: 0 40vmin;
 }
-
-.text > p {
-  padding: 0 2vw 6vw 2vw;
-  max-width: 75vw;
+.contactmail>h1{
+  font-weight: 400;
+  font-size: 3rem;
 }
-
-.text > h1 {
-  padding: 2vw;
-  margin-top: 2rem;
+.contactmail>h1>a{
+  color:var(--accentcolor);
+}
+footer > .footeritems {
+  margin: 0 30vmin;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footeritems > .footeritem {
+  display: flex;
+  flex-direction: column;
+}
+.footeritems > .footeritem > ul > li {
+  list-style: none;
+  font-family: var(--defaultfont);
+  color:var(--color1light);
 }
 
 /* --------------MEDIA QUERY----------------- */
@@ -278,7 +296,7 @@ img {
   .nav-bar > ul > li > a {
     height: 100%;
     justify-content: flex-end;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     text-align: center;
     font-size: 15px;
     display: flex;
@@ -293,7 +311,6 @@ img {
   .nav-bar > ul > li > a:hover {
     font-size: 16px;
   }
-
 
   #active {
     font-size: 16px;

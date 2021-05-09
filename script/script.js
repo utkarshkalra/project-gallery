@@ -18,7 +18,7 @@ const projects = () => {
       `<div class="image">` +
       `<img src="img/projectphoto.jpg" alt="${name}" onclick="window.open('${link}', '_blank');"></div>` +
       `<div class="details">` +
-      `<a href="${link}" target="_blank"><h2>${name}</h2></a>` +
+      `<a href="${link}" target="_blank"><h2>${name} <i id="show" class="fas fa-external-link-alt"></i></h2></a>` +
       `<p>${desc}</p>` +
       `</div><br>` +
       `<div class="tech">
