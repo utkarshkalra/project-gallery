@@ -132,6 +132,10 @@ img {
 
 .about{
   height:70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:0 15vmin;
 }
 
 footer#contact {
