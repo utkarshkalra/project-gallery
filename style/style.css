@@ -25,9 +25,7 @@ body {
 }
 
 hr{
-  width:85%;
-  margin:0 10vmin;
-  border:1px solid var(--accentcolor);
+  border:2px solid var(--accentcolor);
 }
 
 i {
@@ -364,7 +362,7 @@ footer > .footeritems {
   }
 
   .projectarea {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 0 1.5rem;
   }
   .projectarea > h1 {
     font-size: 2.3rem;
@@ -384,8 +382,12 @@ footer > .footeritems {
     font-size: 11px;
   }
   footer#contact {
-    height: 90vh;
+    height: 95vh;
     flex-direction: column;
+  }
+  footer#contact>hr{
+    margin-bottom: 2rem;
+    border-width:2px;
   }
   footer > .contactmail {
     align-items: flex-start;
@@ -409,8 +411,21 @@ footer > .footeritems {
 }
 /* --------------MEDIA QUERY----------------- */
 @media only screen and (min-width: 729px) and (max-width: 960px) {
+    .nav-bar > .logo {
+    min-width: 40%!important;
+  }
+
+
+  .nav-bar > ul {
+    min-width: 65%;
+    justify-content: space-between;
+  }
+  .nav-bar>ul>li>a{
+    align-self: flex-start;
+  }
+
   .aboutmyself{
-    height:77vh;
+    height:80vh;
   }
 .projectarea {
   padding: 2.2rem 1rem 0rem 1rem;
@@ -420,6 +435,9 @@ footer > .footeritems {
   padding: 1rem;
   min-width: 75vmax;
   margin: 0 0.5rem 1rem 0.5rem;
+}
+footer#contact{
+  min-height:85vh;
 }
 .footeritems > .footeritem >h2{
   font-size: 1.1rem;

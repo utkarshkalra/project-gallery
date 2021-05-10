@@ -24,8 +24,8 @@ body {
   color: var(--color1);
 }
 hr {
-  border-color: var(--accentcolor);
-  border-style: solid;
+  border: 2px solid var(--accentcolor);
+  /* border-style: solid; */
 }
 i {
   color: var(--color1);
@@ -161,14 +161,23 @@ img {
 }
 .currentinterest > ul {
   display: flex;
+  align-items: center;
 }
 .currentinterest > ul > li {
   list-style: none;
   margin-right: 0.5rem;
+    font-family: var(--defaultfont);
+  color:var(--color1light);
+  /* font-size: small; */
 }
-
+.currentinterest > ul > li >h2{
+  margin-right:1rem;
+}
+  footer#contact>hr{
+    margin-top: 3rem;
+  }
 footer#contact {
-  height: 80vh;
+  height: 90vh;
   color: var(--color1);
   display: flex;
   flex-direction: column;
@@ -318,7 +327,7 @@ footer > .footeritems {
 }
 .currentinterest > ul {
   display: flex;
-  margin-bottom: 5rem;
+
 }
 .currentinterest>h2{
   font-size: 1.7rem;
@@ -326,19 +335,16 @@ footer > .footeritems {
 .currentinterest > ul > li {
   list-style: none;
   margin-right: 0.5rem;
-  font-family: var(--defaultfont);
-  color:var(--color1light);
-  font-size: small;
+
 }
 
-
-  footer#contact {
-    margin-top: 3rem;
-    height: 95vh;
+footer#contact {
+    height: 100vh;
     flex-direction: column;
   }
   footer#contact>hr{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+     border-width: 2px;
   }
   footer > .contactmail {
     align-items: flex-start;
@@ -362,18 +368,72 @@ footer > .footeritems {
 }
 /* --------------MEDIA QUERY----------------- */
 @media only screen and (min-width: 729px) and (max-width: 960px) {
-  .aboutmyself {
-    height: 77vh;
-  }
-  .projectarea {
-    padding: 2.2rem 1rem 0rem 1rem;
+  .nav-bar > .logo {
+    min-width: 40%!important;
   }
 
-  .project {
-    padding: 1rem;
-    min-width: 75vmax;
-    margin: 0 0.5rem 1rem 0.5rem;
+  .nav-bar > ul {
+    min-width: 65%;
+    justify-content: space-between;
   }
+  .nav-bar>ul>li>a{
+    align-self: flex-start;
+  }
+.spacer{
+  height:14vmin;
+}
+  .about {
+  height: auto;
+  flex-direction: column;
+  padding: 0vmin 5vmin 0 8vmin;
+}
+.about > h1 {
+  align-self: center;
+  padding-right: 0;
+}
+/* .about>h1>br{
+  display: none;
+} */
+
+.skillset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75%;
+}
+.skillset>h2{
+  margin-top:3rem;
+  font-size: 2rem;
+}
+.skillset > ul {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.skillset > ul > li {
+  margin-top: 10px;
+  list-style: none;
+  font-size: small;
+  color: var(--color1light);
+}
+
+.currentinterest {
+  padding-left: 8vmin;
+}
+.currentinterest > ul {
+  display: flex;
+
+}
+.currentinterest>h2{
+  font-size: 1.7rem;
+}
+.currentinterest > ul > li {
+  list-style: none;
+  margin-right: 0.5rem;
+
+}
+footer#contact{
+  min-height:90vh;
+}
   .footeritems > .footeritem > h2 {
     font-size: 1.1rem;
   }
@@ -387,7 +447,7 @@ footer > .footeritems {
   .footeritem > ul > li > a {
     text-decoration: none;
     color: var(--color1light);
-    font-size: small;
+    font-size:small;
   }
 }
 @media only screen and (min-width: 729px) and (max-width: 1100px) {
@@ -404,9 +464,54 @@ footer > .footeritems {
     font-size: 2.5rem;
     font-weight: 400;
   }
+  .spacer{
+    height:10vmin;
+  }
+
+  .about {
+  height: auto;
+  padding: 0 5vmin 0 13vmin;
+}
+
+.skillset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.skillset > ul {
+  font-size: 1.2rem;
+  font-family: var(--defaultfont);
+  margin-bottom: 1.1rem;
+}
+.skillset > ul > li {
+  margin-top: 8px;
+  list-style: none;
+  font-size: small;
+  color: var(--color1light);
+}
+
+.currentinterest {
+  padding-left: 13vmin;
+}
+.currentinterest > ul {
+  display: flex;
+  align-items: center;
+}
+.currentinterest > ul > li {
+  list-style: none;
+  margin-right: 0.5rem;
+    font-family: var(--defaultfont);
+  color:var(--color1light);
+  /* font-size: small; */
+}
+.currentinterest > ul > li >h2{
+  margin-right:1rem;
+}
+
 
   footer#contact {
-    height: 80vh;
+    height: 90vh;
     color: var(--color1);
     display: flex;
     flex-direction: column;
