@@ -24,7 +24,7 @@ body {
   color: var(--color1);
 }
 hr {
-  border: 2px solid var(--accentcolor);
+  border: 1px solid var(--accentcolor);
   /* border-style: solid; */
 }
 i {

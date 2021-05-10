@@ -20,12 +20,11 @@ body {
   margin: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
-  border: none;
   background-color: var(--color2);
 }
 
 hr{
-  border:2px solid var(--accentcolor);
+  border:1px solid var(--accentcolor);
 }
 
 i {
