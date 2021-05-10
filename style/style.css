@@ -23,6 +23,13 @@ body {
   border: none;
   background-color: var(--color2);
 }
+
+hr{
+  width:85%;
+  margin:0 10vmin;
+  border:1px solid var(--accentcolor);
+}
+
 i {
   color: var(--color1);
   display: none !important;
@@ -397,8 +404,47 @@ footer > .footeritems {
   }
 }
 /* --------------MEDIA QUERY----------------- */
+@media only screen and (min-width: 729px) and (max-width: 960px) {
+  .aboutmyself{
+    height:77vh;
+  }
+.projectarea {
+  padding: 2.2rem 1rem 0rem 1rem;
+}
 
+.project {
+  padding: 1rem;
+  min-width: 75vmax;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+.footeritems > .footeritem >h2{
+  font-size: 1.1rem;
+}
+.footeritems > .footeritem > ul > li {
+  list-style: none;
+  font-family: var(--defaultfont);
+  color: var(--color1light);
+  font-size: small;
+  margin-bottom: 15px;
+}
+.footeritem > ul > li > a {
+  text-decoration: none;
+  color: var(--color1light);
+  font-size: small;
+ 
+}
+}
 @media only screen and (min-width: 729px) and (max-width: 1100px) {
+
+
+.nav-bar > .logo {
+  min-width: 40%;
+}
+
+.nav-bar > ul {
+  width: 55%;
+  justify-content: space-around;
+}
 
 h1 {
   font-family: var(--defaultfont);
@@ -461,13 +507,14 @@ footer > .contactmail {
 }
 
 footer > .footeritems {
-  margin: 0 5vmin;
+  margin: 0 2vmin;
   justify-content: space-around;
 }
 .footeritems > .footeritem {
   display: flex;
   flex-direction: column;
 }
+
 .footeritems > .footeritem > ul > li {
   list-style: none;
   font-family: var(--defaultfont);
@@ -481,7 +528,7 @@ footer > .footeritems {
   font-size: unset;
  
 }
-.footeritem > ul > li > a:hover {
+.footeritem > ul > li > a:hover:focus {
   text-decoration: underline;
   text-decoration-color: var(--accentcolor);
   text-underline-offset: 5px;
