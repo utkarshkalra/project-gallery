@@ -22,6 +22,7 @@ body {
   overflow-x: hidden;
   background-color: var(--color2);
   color: var(--color1);
+  scroll-behavior: smooth;
 }
 hr {
   border: 1px solid var(--accentcolor);
