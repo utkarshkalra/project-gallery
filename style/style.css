@@ -287,6 +287,10 @@ footer > .footeritems {
     font-size: 13px;
   }
 
+   html.touch *:hover {
+    pointer-events: none !important;
+    all:unset!important
+  }
   .nav-bar {
     bottom: 0;
     padding: 0;
