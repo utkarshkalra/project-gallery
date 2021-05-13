@@ -16,7 +16,7 @@ const projects = () => {
     q +=
       `<div class="project">` +
       `<div class="image">` +
-      `<img src="img/projectphoto.jpg" alt="${name}" onclick="window.open('${link}', '_blank');"></div>` +
+      `<img src=${image} alt="${name}" onclick="window.open('${link}', '_blank');"></div>` +
       `<div class="details">` +
       `<a href="${link}" target="_blank"><h2>${name} <i id="show" class="fas fa-external-link-alt"></i></h2></a>` +
       `<p>${desc}</p>` +
@@ -32,7 +32,6 @@ const projects = () => {
 
 projects();
 
-
 //scrolltop
 
 var mybutton = document.getElementById("myBtn");
@@ -42,14 +41,16 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
 }
-mybutton.addEventListener('click',()=>{
-
+mybutton.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-})
+});
